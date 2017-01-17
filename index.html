@@ -1,0 +1,57 @@
+<html>
+<title>Weather App</title>
+
+<head>
+</head>
+
+<body onload="javascript:getGeolocation();">
+
+	<div align="center " class="container-fluid">
+		<div class="col-sm-4"></div>
+		<div id="content" class="col-sm-4 well">
+			<div class="page-header">
+				<h1>Weather App</h1>
+			</div>
+			<p><img id="weatherIcons" src=""></p>
+			<br>
+			<p id="weather" style="font-size:60px;">Clouds</p>
+			<p id="temperature">0ºC</p>
+			<div class="btn-group">
+				<button type="button" onClick="javascript:getGeolocation();" class="btn btn-primary">Refresh</button>
+				<button type="button" onClick="javascript:convertTemperature();" class="btn btn-default">Celcius / Fahrenheit</button>
+			</div>
+		</div>
+		<div class="col-sm-4"></div>
+	</div>
+	</div>
+
+	<div class="modal fade">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Modal title</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Modal body text goes here.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary">Save changes</button>
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito|Dosis" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="weather.js"></script>
+</body>
+
+</html>

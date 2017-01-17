@@ -1,0 +1,25 @@
+body {
+	background-color: #8C4646;
+	font-family: 'Nunito', sans-serif;
+}
+
+#temperature {
+	font-size: 80px;
+	color: #F2E394;
+	font-family: 'Dosis', sans-serif;
+}
+
+#unitMeasure {
+	font-size: 80px;
+	color: blueviolet;
+	font-family: 'Dosis', sans-serif;
+}
+
+#content {
+	border-radius: 05px;
+	background-color: #D96459;
+}
+
+#weatherIcons {
+	height: 200px;
+}
